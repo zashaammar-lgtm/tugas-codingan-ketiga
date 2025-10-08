@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .kotak-atas {
+            background-color: cyan;
+            width: 600px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .kotak-atas h2 {
+            color: rgb(255, 0, 0);
+        }
+
+        .kotak-bawah {
+            background-color: tomato;
+            width: 300px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .kotak-bawah h3 {
+            color: maroon;
+        }
+
+        .kotak-bawah a {
+            color: blue;
+            text-decoration: none;
+        }
+
+        .kotak-bawah a:hover {
+            text-decoration: underline;
+        }
+     </style>
+</head>
+<body>
+
+    <div class="kotak-atas">
+        <h2>Belajar Attribute</h2>
+        <p style="color: white;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <b>Porro</b> dolores animi quae maxime error pariatur quisquam similique! 
+            <u>Veritatis</u>, voluptatum ipsa molestiae voluptatibus, eligendi nobis fugit, 
+            quas voluptatem porro necessitatibus magnam.
+        </p>
+    </div>
+
+    <div class="kotak-bawah">
+        <h3>Kotak Baru</h3>
+        <p>Ini div bawah</p>
+        <a href="https://www.google.com" target="_blank">Klik Google ke Tab Baru</a>
+
+        <h3>Tipe-Tipe List</h3>
+        <p>type="1"</p>
+        <ol type="1">
+            <li>Tomato</li>
+            <li>Brocoli</li>
+            <li>Bawang Putih</li>
+            <li>Bawang Merah</li>
+        </ol>
+
+        <p>type="2"</p>
+        <ul type="2">
+            <li>Jawa Tengah</li>
+            <li>Jawa Barat</li>
+            <li>Jawa Selatan</li>
+            <li>Jawa Timur</li>
+        </ul>
+    </div>
+
+</body>
+</html>

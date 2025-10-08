@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML 5 Form</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+        />
+    </head>
+    <body>
+        <main class="container">
+            <h1>HTML 5 Form</h1><hr>
+            <form>
+                <div>
+                    <!-- Tips shortcut: input:[type-nya] -->
+                    <label for="inputName">Nama Lengkap :</label>      <!-- "for" and "id" must be the same(harus sama)-->
+                    <input type="text" name="nama" id="inputName"> 
+                </div>
+                <div>
+                    <!-- Tips shortcut: input:[type-nya] -->
+                    <label for="inputAge">Umur :</label>      <!-- "for" and "id" must be the same(harus sama)-->
+                    <input type="number" name="nama" id="inputAge"> 
+                </div>
+                <div>
+                    <label for="inputAge">Umur :</label>
+                    <textarea name="bio" id="InputBio"></textarea>
+                </div>
+                <div>
+                    <p>Jenis Kelamin</p>
+                    <input type="radio" name="jenis_kelamin" id="inputlanang">
+                    <label for="inputlanang">laki-laki</label>
+                    <input type="radio" name="jenis_kelamin" id="inputwedok">
+                    <label for="inputwedok">perempuan</label>
+                </div>
+                <div>
+                    <p>Hobi/Minat</p>
+                    <input type="checkbox" name="hobi" id="inputmancing">
+                    <label for="inputmancing">Mancing</label>
+                    <input type="checkbox" name="hobi" id="inputfutsal">
+                    <label for="inputfutsal">futsal</label>
+                    <input type="checkbox" name="hobi" id="inputbola">
+                    <label for="inputbola">bola</label>
+                    <input type="checkbox" name="hobi" id="inputvolly">
+                    <label for="inputvolly">volly</label>
+                    <input type="checkbox" name="hobi" id="inputbasket">
+                    <label for="inputbasket">basket</label>
+                    <input type="checkbox" name="hobi" id="inputpimpong">
+                    <label for="inputpimpong">pimpong</label>
+                </div>
+                <div>
+                    <label for=""></label>
+                </div>
+                <div>
+                    <label for="inputasal">asal daerah</label>
+                    <select name="" id="">
+                        <option value="JKT">Jakarta</option>
+                        <option value="BKS">Bekasi</option>
+                        <option value="PRJ">Purworejo</option>
+                        <option value="SMR">Semarang</option>
+                    </select>
+                </div>
+                <div class="grid">
+                    <button type="reset">Batalkan</button>
+                    <button type="submit">Kirim</button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

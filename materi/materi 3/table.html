@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+     #table-basic {
+        width: 60%;
+        border-collapse: collapse;
+     }
+     #table-basic td {
+        padding: 6px;
+        font-family: Arial;
+     }
+     .bg-header{
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+     }
+    </style>
+  </head>
+  <h1>HTML 5 TABLE</h1>
+  <hr />
+  <h3>Table Basic</h3>
+  <!--<table>membuat sruktur table-->
+  <!--<tr> buat baris baru-->
+  <!--<td> buat cell/kolom data baru-->
+  <!-- tops sourcut : tr>td*3-->
+  <table border="1" style="width: 60%">
+    <tr class="bg-header">
+      <td>No</td>
+      <td>Name</td>
+      <td>Hiburan Favirite</td>
+      <td>Hobi lain</td>
+    </tr>
+    <tr>
+      <td>1.</td>
+      <td>kareem</td>
+      <td>ngding</td>
+      <td>nyuci baju</td>
+    </tr>
+    <tr>
+      <td>2.</td>
+      <td>dzaky</td>
+      <td>baca buku</td>
+      <td>nonton</td>
+    </tr>
+    <tr>
+      <td>3.</td>
+      <td>ammar</td>
+      <td>futsal</td>
+      <td>pacarn</td>
+    </tr>
+  </table>
+
+  <h3>TABLE HTML 5</h3>
+  <table border="1" style="width: 60%">
+    <tr>
+      <th>No</th>
+      <th>Tanggal</th>
+      <th>Nama Barang</th>
+      <th>Harga Barang</th>
+    </tr>
+    <tbody>
+      <tr>
+        <td>1.</td>
+        <td>01/1/2025</td>
+        <td>olive</td>
+        <td>Rp 15.000</td>
+      </tr>
+      <tr>
+        <td>2.</td>
+        <td>02/1/2025</td>
+        <td>teh desa</td>
+        <td>Rp 10.000</td>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td>03/1/2025</td>
+        <td rowspan="2">nasi padang prasmanan</td>
+        <td>Rp 10.000</td>
+      </tr>
+      <tr>
+        <td>3.</td>
+        <td>03/1/2025</td>
+        <td>Rp 10.000</td>
+      </tr>
+      <tr>
+        <td colspan="3"><b>Total pengurangan</b></td>
+        <td><b>Rp 45.000</b></td>
+      </tr>
+    </tbody>
+  </table>
+</html>

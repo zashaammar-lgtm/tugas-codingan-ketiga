@@ -1,0 +1,12 @@
+.text-tengah {
+    text-align: center;
+}
+.text-kiri {
+    text-align: left;
+}
+.text-kanan {
+    text-align: right;
+}
+.text-rata {
+    text-align: justify;
+}

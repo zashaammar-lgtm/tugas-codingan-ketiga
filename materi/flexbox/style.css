@@ -1,0 +1,38 @@
+.card {
+  background: #f9f9f9;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+  height: 200px;
+  width: 200px;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+}
+
+.border-blue {
+  border-color: indigo;
+  height: 220px;
+  width: 220px;
+}
+
+.flex-area {
+  display: flex;
+  /* Atur posisi items secara
+    horizontal */
+  justify-content: center;
+  /* gap = jarak antara items */
+  gap: 12px;
+  /* atur posisi item mengikuti titik
+    tengah atau sumbu x */
+  align-items: center;
+}
+
+.alert {
+  width: 600px;
+  background: #bedef8;
+  justify-content: space-between;
+}
+
+.alert button {
+  background: #333;
+}

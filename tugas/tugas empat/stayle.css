@@ -1,0 +1,98 @@
+body{
+      margin:0;
+      font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background: linear-gradient(90deg,#0f0f0f 0 70px, #f3f5f7 70px  calc(100% - 70px), #0f0f0f calc(100% - 70px));
+      color:#222;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:40px 0;
+      display:flex;
+      justify-content:center;
+    }
+
+    .sheet{
+      width:900px;
+      background:var(--bg);
+      border-radius:10px;
+      padding:32px;
+      box-shadow:0 8px 30px rgba(11,12,14,0.12);
+    }
+
+    .hero{
+      background: #e9f5ff;
+      border-radius:10px;
+      padding:34px 24px;
+      text-align:center;
+      box-shadow: inset 0 -2px 0 rgba(255,255,255,0.6);
+    }
+    .hero h1{
+      margin:0;
+      font-family: 'Merriweather', serif;
+      letter-spacing:2px;
+      color:#0b63a8;
+      font-size:40px;
+    }
+    .hero p{margin:8px 0 0;color: #6b7a86;font-style:italic}
+
+    .content{
+      margin-top:26px;
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:10px;
+      padding:24px;
+      box-shadow:0 8px 20px rgba(12,15,20,0.06);
+    }
+
+    .article-title{
+      color:var(--accent);
+      font-weight:700;
+      font-size:24px;
+      margin:0 0 8px 0;
+    }
+    .article p{line-height:1.7;margin:0 0 14px 0;color:#222}
+    .highlight{color:var(--danger);font-weight:600}
+    .strong{font-weight:700}
+    .italic{font-style:italic}
+
+    /* quote box */
+    .quote{
+      margin-top:18px;
+      background:#eaf3ff;
+      border-left:6px solid var(--accent-2);
+      padding:14px 18px;
+      border-radius:4px;
+      font-style:italic;
+      color:#173a66;
+    }
+
+    /* tip box */
+    .tip{
+      margin-top:16px;
+      background:#fff2f2;
+      border-left:6px solid var(--danger);
+      padding:14px 18px;
+      border-radius:4px;
+      color:#6b2727;
+      display:flex;
+      gap:12px;
+      align-items:center;
+    }
+
+    /* footer author */
+    .footer{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-top:34px;
+      padding:0 4px;
+    }
+    .author-title{font-weight:700;color:#222}
+    .author-name{font-family:'Pacifico', cursive;color:var(--danger);font-size:36px;margin-top:4px}
+
+    /* responsive */
+    @media (max-width:980px){
+      .sheet{width:92%;padding:20px}
+      .hero h1{font-size:32px}
+    }

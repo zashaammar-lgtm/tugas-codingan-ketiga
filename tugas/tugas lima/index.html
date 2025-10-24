@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solusi Tugas CSS Komponen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Solusi Tugas CSS Komponen</h2>
+
+    <!-- 1. Dismissible Alert -->
+    <div class="card">
+      <h3>1. Dismissible Alert (Positioning)</h3>
+      <div class="alert">
+        <strong>Informasi Penting:</strong> Ini adalah contoh notifikasi sukses.
+        Klik 'X' untuk menutup.
+        <span class="close-btn" onclick="this.parentElement.style.display='none'">&times;</span>
+      </div>
+    </div>
+
+    <!-- 2. Profile Card -->
+    <div class="card">
+      <h3>2. Profile Card dengan Status Badge</h3>
+      <div class="profile-card">
+        <div class="profile-img">
+          <img src="tugas pisau.png" alt="png">
+          <span class="status"></span>
+        </div>
+        <h4>Dzaky Ammar Banu</h4>
+        <p>Designer</p>
+      </div>
+    </div>
+
+    <!-- 3. Responsive Pricing Cards -->
+    <div class="card">
+      <h3>3. Responsive Pricing Cards (Flexbox)</h3>
+      <div class="pricing-container">
+        <div class="pricing-card">
+          <h4 class="title basic">Paket Dasar</h4>
+          <h2>Rp 50.000</h2>
+          <p>1 project <br> Community Support</p>
+          <button class="btn basic">Pilih Dasar</button>
+        </div>
+
+        <div class="pricing-card pro">
+          <h4 class="title pro">Paket PRO</h4>
+          <h2>Rp 150.000</h2>
+          <p>5 Projects <br> Priority Support</p>
+          <button class="btn pro">Beli PRO</button>
+        </div>
+
+        <div class="pricing-card">
+          <h4 class="title business">Paket Bisnis</h4>
+          <h2>Rp 300.000</h2>
+          <p>Unlimited Projects <br> Dedicated Support</p>
+          <button class="btn business">Hubungi Kami</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

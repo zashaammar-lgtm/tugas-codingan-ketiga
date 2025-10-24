@@ -1,0 +1,36 @@
+header {
+    background: white;
+    text-align: center;
+}
+
+nav {
+    background: rgb(165, 162, 162);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    gap: 13px;
+}
+
+nav li a {
+    color: white;
+    background: rgb(46, 46, 46);
+}
+
+/* ukuran 1024px => desktop++ */
+@media screen and (min-width: 1024px) {
+    header {
+        background-color: gold;
+    }
+}
+
+/* ukuran 768-1023px => tablet */
+@media screen and (min-width: 768px) and 
+(max-width: 1023px) {
+    header{
+        background-color: tomato;
+    }
+}

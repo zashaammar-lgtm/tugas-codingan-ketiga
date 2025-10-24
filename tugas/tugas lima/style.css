@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f6fa;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+/* ALERT */
+.alert {
+  background-color: #d1ecf1;
+  color: #0c5460;
+  padding: 10px 15px;
+  border: 1px solid #bee5eb;
+  border-radius: 5px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #0c5460;
+}
+
+/* PROFILE CARD */
+.profile-card {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #f0f0f0;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.profile-img {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-img img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.status {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  width: 15px;
+  height: 15px;
+  background-color: #28a745;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+/* PRICING CARDS */
+.pricing-container {
+  display: flex;
+  justify-content: space-between; /* agar sejajar */
+  align-items: stretch; /* semua sama tinggi */
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pricing-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  flex: 1; /* biar fleksibel */
+  min-width: 250px; /* batas minimum */
+  max-width: 300px; /* batas maksimum */
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.pricing-card.pro {
+  border: 2px solid #007bff;
+}
+
+.title.basic { color: #007bff; }
+.title.pro { color: #007bff; }
+.title.business { color: #007bff; }
+
+.btn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.btn.basic { background: #007bff; }
+.btn.pro { background: #007bff; }
+.btn.business { background: #007bff; }
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .pricing-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

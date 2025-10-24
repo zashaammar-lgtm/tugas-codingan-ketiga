@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-3 Box Model & Position</title>
+    <!-- Pico CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    >
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="stayle.css">
+</head>
+<body>
+    <!-- Beri space di kiri-kanan halaman -->
+    <div class="container">
+        <h1>CSS-3 Box Model & Position</h1> 
+        <hr>
+
+        <h2>bagian 1: Box Model</h2> 
+        <!-- Grid area -->
+        <div class="grid">
+            <!-- Card box A -->
+            <div class="card">
+                <div class="area" id="box-a">
+                    <h3>Box A</h3>
+                    <p>(Konten - Original)</p>
+                </div>
+            </div>
+            <!-- End card box A -->
+
+            <!-- Card box B -->
+            <div class="card">
+                <div class="area" id="box-b">
+                    <h3>Box B</h3>
+                    <p>(Konten + Padding)</p>
+                </div>
+            </div>
+            <!--  End card box B -->
+
+            <!-- Card box C -->
+            <div class="card">
+                <div class="area" id="box-c">
+                    <h3>Box C</h3>
+                    <p>(Konten + Padding + Border)</p>
+                </div>
+            </div>
+            <!--  End card box C -->
+
+            <!-- Card box D -->
+            <div class="card">
+                <div class="area" id="box-d">
+                    <h3>Box D</h3>
+                    <p>(Konten + Padding + Border + Margin)</p>
+                </div>
+            </div>
+            <!--  End card box D -->
+        </div>
+        <!-- End grid area -->
+        <hr>
+
+        <h2>bagian 2: Position</h2>
+        <!-- Grid area -->
+        <div class="grid">
+            <!-- Tips Cepat: .card>.areah3+p -->
+            <!-- Card box static -->
+            <div class="card">
+                <div class="area" id="box-static">
+                    <h3>Box Static</h3>
+                    <p>(Default)</p>
+                </div>
+            </div>
+            <!-- End card box static -->
+
+            <!-- Card box relative -->
+            <div class="card">
+                <div class="area" id="box-relative">
+                    <h3>Box Relative</h3>
+                    <p>(Bebas di geser)</p>
+                </div>
+            </div>
+            <!-- End card box relative -->
+
+            <!-- Card box absolute -->
+            <div class="card" style="position: relative;">
+                <div class="area" id="box-absolute">
+                    <h3>Box Absolute</h3>
+                    <p>(Bebas di geser di area ber-induk relative)</p>
+                </div>
+            </div>
+            <!-- End card box absolute -->
+
+            <!-- Card box fixed -->
+            <div class="card">
+                <div class="area" id="box-fixed">
+                    <h3>Box Fixed</h3>
+                    <p>(Bebas di geser di semua halaman dan fix / tetap di posisinya)</p>
+                </div>
+            </div>
+            <!-- End card box fixed -->
+        </div>
+        <!-- End grid area -->
+    </div>
+    
+    
+</body>
+</html>

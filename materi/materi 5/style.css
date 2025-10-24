@@ -1,0 +1,65 @@
+.card {
+  background: #f9f9f9;
+  text-align: center;
+  place-content: center;
+  place-items: center;
+  height: 250px;
+  width: 250px;
+  border: 2px dashed #333;
+  border-radius: 6px;
+}
+
+.area {
+  width: 100px;
+  height: 100px;
+  place-content: center;
+  background: yellow;
+  margin-bottom: 6px;
+  /* div default-nya block */
+  /* display: blok; */
+}
+
+.area h3,
+.area p {
+  margin: 0 auto;
+}
+
+.area p {
+  font-size: 14px;
+  color: #666;
+}
+
+.area-1b {
+  display: inline-block;
+  background: pink;
+}
+
+.area-in {
+  background: #f9f9f9;
+}
+
+.area-in p {
+  display: inline;
+  background: red;
+  padding: 6px;
+}
+
+.area-none {
+  background: gold;
+  /* none = sembunyiin */
+  display: none;
+}
+
+.card:hover .area-none {
+  display: block;
+}
+
+.flexbox-area {
+  display: flex;
+  /* gap = jarak antara item */
+  gap: 10px;
+  /*  flex-diriction: row-reverse */
+  /*  flex-diriction: colums */
+  /*  default: flex-str*/
+  justify-content: space-between;
+}

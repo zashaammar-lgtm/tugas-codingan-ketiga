@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS3: Display & Flexbox</title>
+        <!-- pico css -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+        />
+        <!-- style css -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- beri space di kiri-kanan halaman -->
+        <div class="container">
+            <h1>CSS3: Display & Flexbox</h1> <hr />
+            <h2>Bagian 1: Display</h2>
+            <!-- grid area -->
+            <div class="grid">
+                <!-- card box a -->
+                <div class="card">
+                    <code>display: blok;</code>
+                    <div class="area">
+                        <h3>Box A</h3>
+                        <p>(Konten A)</p>
+                    </div>
+                
+                    <div class="area">
+                        <h3>Box B</h3>
+                        <p>(Konten B)</p>
+                    </div>
+                </div>
+                <!-- end card box fixed -->
+
+                
+                <!-- card inline-block -->
+                <div class="card">
+                    <code>display: inline-block;</code>
+                    <div class="area area-1b">
+                        <h3>Box C</h3>
+                        <p>(Konten C)</p>
+                    </div>
+                
+                    <div class="area area-1b">
+                        <h3>Box D</h3>
+                        <p>(Konten D)</p>
+                    </div>
+                </div>
+                <!-- end card inline-block -->
+
+                <!-- card inline -->
+                <div class="card">
+                    <code>display: inline;</code>
+                    <div class="area area-in">
+                        <p>F</p>
+                        <p>S</p>
+                        <p>P</p>
+                    </div>
+                </div>
+                <!-- end card inline -->
+
+                <!-- card none -->
+                <div class="card">
+                    <code>display: none;</code>
+                    <div class="area area-none">
+                        <h3>Box H</h3>
+                        <p>konten H</p>
+                    </div>
+                </div>
+                <!-- end card none -->   
+        </div> <br> <br> <br>
+
+        <div class="container">
+          <h2>bagian 2 : Flexbox (basic)</h2>
+          <div class="flexbox-area">
+            <div class="card">
+              [1] ANIME
+            </div>
+            <div class="card">
+              [2] SPORT
+            </div>
+            <div class="card">
+              [3] SPORT
+            </div>
+          </div>`
+        </div>
+    </body>
+</html>

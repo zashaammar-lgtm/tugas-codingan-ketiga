@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS3: Display & Flexbox</title>
+        <!-- pico css -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+        />
+        <!-- style css -->
+        <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- beri space di kiri-kanan halaman -->
+    <div class="container">
+        <h1>CSS3: Flexbox</h1> 
+        <hr />
+        <!-- Wadah / parent display flex -->
+        <div class="flex-area">
+            <!-- item di dlm flex disebut flex items -->
+            <div class="card">A</div>
+            <div class="card border-blue">B</div>
+            <div class="card">C</div>
+        </div>
+
+        <!-- Tambpilan Alert -->
+        <div class="flex-area alert">
+            <p>ℹ️inpo: pastikan data sudah lengkap!</p>
+            <button type="button" onclick="this.parentElement.style.display='none'">
+                ❌
+            </button>
+         </div>
+    </div>
+</body>
+</html>
